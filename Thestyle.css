@@ -1,0 +1,46 @@
+
+div#anime{
+    width: 100px;
+    height: 100px;
+    background-color:red ;
+    position: relative;
+    animation-name: square;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+
+}
+
+@keyframes square {
+    0% {background-color: rgb(236, 28, 28);
+        left: 0px;
+        top: 0px;
+    }
+    
+    25% { background-color:rgb(255, 30, 206) ;
+    left: 1200px;
+    top: 0px;
+    }
+
+    50% {
+         background-color: springgreen;
+    left: 1200px;
+    top: 500px;
+    border-radius: 50%;
+     }
+
+    75% { background-color: rgba(255, 255, 0, 0.877);
+    left: 0px;
+    top: 500px;
+    }
+
+    100% { background-color: violet;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    }
+}
